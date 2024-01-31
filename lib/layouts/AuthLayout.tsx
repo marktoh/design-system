@@ -1,9 +1,9 @@
-import { ReactNode } from "react";
+import { FC, ReactNode } from "react";
 interface AuthLayoutProps {
   left: ReactNode;
   right: ReactNode;
 }
-function AuthLayout({ left, right }: AuthLayoutProps) {
+const AuthLayout: FC<AuthLayoutProps> = ({ left, right }) => {
   return (
     <div className="flex h-screen flex-col md:grid md:grid-cols-[3fr_2fr]">
       <section className="hidden md:block md:h-screen">{left}</section>
@@ -12,6 +12,6 @@ function AuthLayout({ left, right }: AuthLayoutProps) {
       </section>
     </div>
   );
-}
+};
 
 export default AuthLayout;

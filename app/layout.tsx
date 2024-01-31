@@ -1,3 +1,4 @@
+import { FC, ReactNode } from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -9,14 +10,14 @@ export const metadata: Metadata = {
   description: "A design system for Mumbo",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+interface RootLayoutProps {
+  children: ReactNode;
+}
+const RootLayout: FC<Readonly<RootLayoutProps>> = ({ children }) => {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
   );
-}
+};
+export default RootLayout;

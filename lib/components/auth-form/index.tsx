@@ -1,22 +1,24 @@
 "use client";
-import { FormEvent, ReactElement, ReactNode } from "react";
-
+import { FormEvent, FC, ReactNode } from "react";
 import Button from "./Button";
 import AuthLink from "./Link";
 
-function Title({ children }: { children: ReactNode }) {
+interface AuxProps {
+  children: ReactNode;
+}
+const Title: FC<AuxProps> = ({ children }) => {
   return (
     <h1 className="mb-2 text-4xl font-medium text-slate-700">{children}</h1>
   );
-}
-function FormGroupBody({ children }: { children: ReactNode }) {
+};
+const FormGroupBody: FC<AuxProps> = ({ children }) => {
   return <div className="flex flex-col gap-6">{children}</div>;
-}
-function NavLinks({
-  authLinks,
-}: {
+};
+
+interface authLinksProps {
   authLinks: Array<{ href: string; title: string }>;
-}) {
+}
+const NavLinks: FC<authLinksProps> = ({ authLinks }) => {
   return (
     authLinks?.length > 0 && (
       <div className="mt-2 flex gap-2">
@@ -24,7 +26,7 @@ function NavLinks({
       </div>
     )
   );
-}
+};
 interface AuthFormProps {
   title: string;
   formGroups: ReactNode;
@@ -35,13 +37,13 @@ interface AuthFormProps {
 /**
  * A base component for building authentication forms.
  */
-function AuthForm({
+const AuthForm: FC<AuthFormProps> = ({
   title,
   formGroups,
   buttonTitle,
   authLinks,
   onSubmit,
-}: AuthFormProps): ReactElement {
+}) => {
   return (
     <form
       className="mx-auto flex min-h-96 w-96 flex-col gap-2 rounded px-2"
@@ -53,6 +55,6 @@ function AuthForm({
       <NavLinks authLinks={authLinks} />
     </form>
   );
-}
+};
 
 export default AuthForm;

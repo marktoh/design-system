@@ -1,5 +1,5 @@
 "use client";
-import { FormEvent } from "react";
+import { FormEvent, FC } from "react";
 import AuthForm from "./auth-form";
 import EmailFormGroup from "./auth-form/FormGroup-Email";
 import PasswordFormGroup from "./auth-form/FormGroup-Password";
@@ -29,7 +29,7 @@ const props = {
     e.preventDefault();
   },
 };
-function SignUpForm() {
+const SignUpForm: FC = () => {
   const { title, formGroups, buttonTitle, authLinks, onSubmit } = props;
   return (
     <AuthForm
@@ -40,6 +40,6 @@ function SignUpForm() {
       onSubmit={onSubmit}
     />
   );
-}
+};
 
 export default SignUpForm;

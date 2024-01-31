@@ -1,7 +1,8 @@
+import { FC } from "react";
 import NavList from "@/lib/components/molecules/NavList";
 import store from "@/store";
 
-export default function Page() {
+const Page: FC = () => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div>
@@ -10,4 +11,6 @@ export default function Page() {
       </div>
     </main>
   );
-}
+};
+
+export default Page;

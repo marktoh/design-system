@@ -1,5 +1,5 @@
 "use client";
-import { FormEvent } from "react";
+import { FormEvent, FC } from "react";
 import AuthForm from "./auth-form";
 import EmailFormGroup from "./auth-form/FormGroup-Email";
 
@@ -21,7 +21,7 @@ const props = {
     e.preventDefault();
   },
 };
-function ForgotPasswordForm() {
+const ForgotPasswordForm: FC = () => {
   const { title, formGroups, buttonTitle, authLinks, onSubmit } = props;
   return (
     <AuthForm
@@ -32,6 +32,6 @@ function ForgotPasswordForm() {
       onSubmit={onSubmit}
     />
   );
-}
+};
 
 export default ForgotPasswordForm;

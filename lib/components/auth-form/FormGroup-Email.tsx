@@ -1,6 +1,7 @@
+import { FC } from "react";
 import FormGroup from "./FormGroup";
 
-function EmailFormGroup() {
+const EmailFormGroup: FC = () => {
   return (
     <FormGroup
       label={{
@@ -15,6 +16,6 @@ function EmailFormGroup() {
       }}
     />
   );
-}
+};
 
 export default EmailFormGroup;

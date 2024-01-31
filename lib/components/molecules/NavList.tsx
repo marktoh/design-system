@@ -1,10 +1,14 @@
+import { FC } from "react";
 import Link from "next/link";
 
 interface LinkProps {
   href: string;
   title: string;
 }
-function NavList({ links }: { links: Array<LinkProps> }) {
+interface LinksProps {
+  links: Array<LinkProps>;
+}
+const NavList: FC<LinksProps> = ({ links }) => {
   return (
     <ul>
       {links?.map((link) => (
@@ -19,6 +23,6 @@ function NavList({ links }: { links: Array<LinkProps> }) {
       ))}
     </ul>
   );
-}
+};
 
 export default NavList;

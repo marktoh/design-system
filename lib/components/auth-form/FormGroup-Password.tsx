@@ -1,6 +1,7 @@
+import { FC } from "react";
 import FormGroup from "./FormGroup";
 
-function PasswordFormGroup() {
+const PasswordFormGroup: FC = () => {
   return (
     <FormGroup
       label={{
@@ -15,6 +16,6 @@ function PasswordFormGroup() {
       }}
     />
   );
-}
+};
 
 export default PasswordFormGroup;

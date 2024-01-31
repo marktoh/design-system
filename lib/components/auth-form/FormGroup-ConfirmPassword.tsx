@@ -1,6 +1,7 @@
+import { FC } from "react";
 import FormGroup from "./FormGroup";
 
-function ConfirmPasswordFormGroup() {
+const ConfirmPasswordFormGroup: FC = () => {
   return (
     <FormGroup
       label={{
@@ -15,6 +16,6 @@ function ConfirmPasswordFormGroup() {
       }}
     />
   );
-}
+};
 
 export default ConfirmPasswordFormGroup;

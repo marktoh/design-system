@@ -1,3 +1,4 @@
+import { FC } from "react";
 interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
   value?: string;
   dataTestId?: string;
@@ -9,7 +10,7 @@ interface FormGroupProps {
   label: LabelProps;
   input: InputProps;
 }
-function FormGroup({ label, input }: FormGroupProps) {
+const FormGroup: FC<FormGroupProps> = ({ label, input }) => {
   return (
     <div className="flex flex-col gap-2">
       <label
@@ -28,6 +29,6 @@ function FormGroup({ label, input }: FormGroupProps) {
       />
     </div>
   );
-}
+};
 
 export default FormGroup;
