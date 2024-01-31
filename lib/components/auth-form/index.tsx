@@ -46,7 +46,7 @@ const AuthForm: FC<AuthFormProps> = ({
 }) => {
   return (
     <form
-      className="mx-auto flex min-h-96 w-96 flex-col gap-2 rounded px-2"
+      className="mx-auto flex min-h-96 w-96 flex-col gap-2 rounded"
       onSubmit={onSubmit}
     >
       <Title>{title}</Title>
