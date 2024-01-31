@@ -4,6 +4,7 @@ import AuthForm from "./auth-form";
 import EmailFormGroup from "./auth-form/FormGroup-Email";
 import PasswordFormGroup from "./auth-form/FormGroup-Password";
 import ConfirmPasswordFormGroup from "./auth-form/FormGroup-ConfirmPassword";
+import { LoginRoute, ForgotPasswordRoute } from "./auth-form/Link";
 
 const props = {
   title: "Sign Up for Free",
@@ -15,16 +16,7 @@ const props = {
     </>
   ),
   buttonTitle: "Continue",
-  authLinks: [
-    {
-      href: "/login",
-      title: "Log In",
-    },
-    {
-      href: "/forgot-password",
-      title: "Forgot Password",
-    },
-  ],
+  authLinks: [LoginRoute, ForgotPasswordRoute],
   onSubmit: function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
   },

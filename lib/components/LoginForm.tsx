@@ -1,8 +1,9 @@
 "use client";
 import { FormEvent, FC } from "react";
+import AuthForm from "./auth-form";
 import EmailFormGroup from "./auth-form/FormGroup-Email";
 import PasswordFormGroup from "./auth-form/FormGroup-Password";
-import AuthForm from "./auth-form";
+import { SignUpRoute, ForgotPasswordRoute } from "./auth-form/Link";
 
 const props = {
   title: "Log in to your account",
@@ -13,16 +14,7 @@ const props = {
     </>
   ),
   buttonTitle: "Continue",
-  authLinks: [
-    {
-      href: "/sign-up",
-      title: "Sign Up",
-    },
-    {
-      href: "/forgot-password",
-      title: "Forgot Password",
-    },
-  ],
+  authLinks: [SignUpRoute, ForgotPasswordRoute],
   onSubmit: function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
   },

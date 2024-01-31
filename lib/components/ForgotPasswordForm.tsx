@@ -2,21 +2,13 @@
 import { FormEvent, FC } from "react";
 import AuthForm from "./auth-form";
 import EmailFormGroup from "./auth-form/FormGroup-Email";
+import { LoginRoute, SignUpRoute } from "./auth-form/Link";
 
 const props = {
   title: "Reset Password",
   formGroups: <EmailFormGroup />,
   buttonTitle: "Get Reset Password Link",
-  authLinks: [
-    {
-      href: "/login",
-      title: "Login",
-    },
-    {
-      href: "/sign-up",
-      title: "Sign Up",
-    },
-  ],
+  authLinks: [LoginRoute, SignUpRoute],
   onSubmit: function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
   },
