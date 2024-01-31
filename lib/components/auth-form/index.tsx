@@ -22,7 +22,9 @@ const NavLinks: FC<authLinksProps> = ({ authLinks }) => {
   return (
     authLinks?.length > 0 && (
       <div className="mt-2 flex gap-2">
-        {authLinks?.map((e) => <AuthLink href={e.href} title={e.title} />)}
+        {authLinks?.map((e) => (
+          <AuthLink key={e.href} href={e.href} title={e.title} />
+        ))}
       </div>
     )
   );
