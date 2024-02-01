@@ -29,26 +29,23 @@ const ShoppingGalleyCard: FC<Product> = ({
         </div>
       </div>
       <div>
-        <div className="flex items-center text-sm text-slate-600">
-          <div
-            className="w-16"
-            data-testid="shopping-gallery-card-material-label"
-          >
+        <div className="grid grid-cols-[64px_1fr] text-sm text-slate-600">
+          <div className="" data-testid="shopping-gallery-card-material-label">
             Material
           </div>
           <span
-            className="text-xs"
+            className="text-xs leading-5"
             data-testid="shopping-gallery-card-material-value"
           >
             {material}
           </span>
         </div>
-        <div className="flex items-center text-sm text-slate-600">
-          <div className="w-16" data-testid="shopping-gallery-card-tags-label">
+        <div className="grid grid-cols-[64px_1fr] text-sm text-slate-600">
+          <div className="" data-testid="shopping-gallery-card-tags-label">
             Tags
           </div>
           <span
-            className="text-xs"
+            className="text-xs leading-5"
             data-testid="shopping-gallery-card-tags-value"
           >
             {adjective?.join(", ")}
