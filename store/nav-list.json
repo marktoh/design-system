@@ -10,5 +10,9 @@
   {
     "href": "/forgot-password",
     "title": "Forgot Password"
+  },
+  {
+    "href": "/products",
+    "title": "Products"
   }
 ]

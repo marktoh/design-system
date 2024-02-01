@@ -5,5 +5,6 @@ describe("Home Page", () => {
     cy.get("li").eq(0).contains("Login");
     cy.get("li").eq(1).contains("Sign Up");
     cy.get("li").eq(2).contains("Forgot Password");
+    cy.get("li").eq(3).contains("Products");
   });
 });
