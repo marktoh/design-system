@@ -9,6 +9,7 @@
     "lint": "next lint",
     "cypress:open": "cypress open",
     "cypress:headless": "cypress run",
+    "cypress:component": "cypress run --component",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
