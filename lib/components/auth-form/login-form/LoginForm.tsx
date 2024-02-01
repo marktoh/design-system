@@ -1,9 +1,9 @@
 "use client";
 import { FormEvent, FC } from "react";
-import AuthForm from "./auth-form";
-import EmailFormGroup from "./auth-form/FormGroup-Email";
-import PasswordFormGroup from "./auth-form/FormGroup-Password";
-import { SignUpRoute, ForgotPasswordRoute } from "./auth-form/Link";
+import AuthForm from "..";
+import EmailFormGroup from "../FormGroup-Email";
+import PasswordFormGroup from "../FormGroup-Password";
+import { SignUpRoute, ForgotPasswordRoute } from "../Link";
 
 const props = {
   title: "Log in to your account",

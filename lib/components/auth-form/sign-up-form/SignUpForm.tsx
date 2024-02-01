@@ -1,10 +1,10 @@
 "use client";
 import { FormEvent, FC } from "react";
-import AuthForm from "./auth-form";
-import EmailFormGroup from "./auth-form/FormGroup-Email";
-import PasswordFormGroup from "./auth-form/FormGroup-Password";
-import ConfirmPasswordFormGroup from "./auth-form/FormGroup-ConfirmPassword";
-import { LoginRoute, ForgotPasswordRoute } from "./auth-form/Link";
+import AuthForm from "..";
+import EmailFormGroup from "../FormGroup-Email";
+import PasswordFormGroup from "../FormGroup-Password";
+import ConfirmPasswordFormGroup from "../FormGroup-ConfirmPassword";
+import { LoginRoute, ForgotPasswordRoute } from "../Link";
 
 const props = {
   title: "Sign Up for Free",

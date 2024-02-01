@@ -1,8 +1,8 @@
 "use client";
 import { FormEvent, FC } from "react";
-import AuthForm from "./auth-form";
-import EmailFormGroup from "./auth-form/FormGroup-Email";
-import { LoginRoute, SignUpRoute } from "./auth-form/Link";
+import AuthForm from "..";
+import EmailFormGroup from "../FormGroup-Email";
+import { LoginRoute, SignUpRoute } from "../Link";
 
 const props = {
   title: "Reset Password",
