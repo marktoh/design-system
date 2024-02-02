@@ -1,10 +1,10 @@
 # Design System
 
-A design system for Mumbo.
+A design system for Mumbo
 
 ## Table of Contents
 
-- [Development](#development)
+- 🖥️ [Development](#development)
 
 ## Development
 
