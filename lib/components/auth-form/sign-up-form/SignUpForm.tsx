@@ -7,7 +7,7 @@ import ConfirmPasswordFormGroup from "../FormGroup-ConfirmPassword";
 import { LoginRoute, ForgotPasswordRoute } from "../Link";
 
 const props = {
-  title: "Getting Started",
+  title: "Take Off",
   actionText: "Sign Up for Free",
   formGroups: (
     <>

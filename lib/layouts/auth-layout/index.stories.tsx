@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import LoginForm from "../../components/auth-form/login-form/LoginForm";
-import AuthLayout from "./AuthLayout";
+import AuthLayout from ".";
 import store from "../../../store";
 
 const meta = {
@@ -14,8 +14,8 @@ type Story = StoryObj<typeof AuthLayout>;
 
 export const Login: Story = {
   args: {
-    left: store?.auth?.cover,
-    right: <LoginForm />,
+    left: <LoginForm />,
+    right: store?.auth?.cover,
   },
   parameters: {
     layout: "fullscreen",
