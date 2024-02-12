@@ -8,8 +8,13 @@ interface AuxProps {
 }
 const Title: FC<AuxProps> = ({ children }) => {
   return (
-    <h1 className="mb-2 text-4xl font-medium text-slate-700">{children}</h1>
+    <h1 className="mb-2 text-center text-4xl font-black text-slate-700">
+      {children}
+    </h1>
   );
+};
+const ActionText: FC<AuxProps> = ({ children }) => {
+  return <p className="text-center text-sm text-gray-400">{children}</p>;
 };
 const FormGroupBody: FC<AuxProps> = ({ children }) => {
   return <div className="flex flex-col gap-6">{children}</div>;
@@ -31,6 +36,7 @@ const NavLinks: FC<authLinksProps> = ({ authLinks }) => {
 };
 interface AuthFormProps {
   title: string;
+  actionText: string;
   formGroups: ReactNode;
   buttonTitle: string;
   authLinks: Array<{ href: string; title: string }>;
@@ -41,6 +47,7 @@ interface AuthFormProps {
  */
 const AuthForm: FC<AuthFormProps> = ({
   title,
+  actionText,
   formGroups,
   buttonTitle,
   authLinks,
@@ -52,6 +59,7 @@ const AuthForm: FC<AuthFormProps> = ({
       onSubmit={onSubmit}
     >
       <Title>{title}</Title>
+      <ActionText>{actionText}</ActionText>
       <FormGroupBody>{formGroups}</FormGroupBody>
       <Button title={buttonTitle} />
       <NavLinks authLinks={authLinks} />

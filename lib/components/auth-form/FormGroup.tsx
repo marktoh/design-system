@@ -21,7 +21,7 @@ const FormGroup: FC<FormGroupProps> = ({ label, input }) => {
       </label>
       <input
         id={input?.id}
-        className="rounded border border-gray-200 p-2 pl-3 text-gray-600 outline-blue-500 md:text-sm"
+        className="rounded border border-gray-200 p-4 pl-3 text-gray-600 outline-blue-500 md:text-sm"
         data-testid={input?.dataTestId}
         placeholder={input?.placeholder}
         type={input?.type}

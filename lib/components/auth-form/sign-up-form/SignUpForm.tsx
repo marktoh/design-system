@@ -7,7 +7,8 @@ import ConfirmPasswordFormGroup from "../FormGroup-ConfirmPassword";
 import { LoginRoute, ForgotPasswordRoute } from "../Link";
 
 const props = {
-  title: "Sign Up for Free",
+  title: "Getting Started",
+  actionText: "Sign Up for Free",
   formGroups: (
     <>
       <EmailFormGroup />
@@ -22,10 +23,12 @@ const props = {
   },
 };
 const SignUpForm: FC = () => {
-  const { title, formGroups, buttonTitle, authLinks, onSubmit } = props;
+  const { title, actionText, formGroups, buttonTitle, authLinks, onSubmit } =
+    props;
   return (
     <AuthForm
       title={title}
+      actionText={actionText}
       formGroups={formGroups}
       buttonTitle={buttonTitle}
       authLinks={authLinks}

@@ -5,7 +5,8 @@ import EmailFormGroup from "../FormGroup-Email";
 import { LoginRoute, SignUpRoute } from "../Link";
 
 const props = {
-  title: "Reset Password",
+  title: "Retrieve Account",
+  actionText: "Reset Password",
   formGroups: <EmailFormGroup />,
   buttonTitle: "Get Reset Password Link",
   authLinks: [LoginRoute, SignUpRoute],
@@ -14,10 +15,12 @@ const props = {
   },
 };
 const ForgotPasswordForm: FC = () => {
-  const { title, formGroups, buttonTitle, authLinks, onSubmit } = props;
+  const { title, actionText, formGroups, buttonTitle, authLinks, onSubmit } =
+    props;
   return (
     <AuthForm
       title={title}
+      actionText={actionText}
       formGroups={formGroups}
       buttonTitle={buttonTitle}
       authLinks={authLinks}
