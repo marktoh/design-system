@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Background from "../public/backgrounds/blue-racing-car.png";
+import Background from "../public/backgrounds/flower.jpg";
 import navList from "./nav-list.json";
 import products from "./products.json";
 

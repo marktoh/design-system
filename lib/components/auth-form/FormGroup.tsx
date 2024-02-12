@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
   value?: string;
   dataTestId?: string;
@@ -9,24 +9,30 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 interface FormGroupProps {
   label: LabelProps;
   input: InputProps;
+  icon?: ReactNode;
 }
-const FormGroup: FC<FormGroupProps> = ({ label, input }) => {
+const FormGroup: FC<FormGroupProps> = ({ label, input, icon }) => {
   return (
     <div className="flex flex-col gap-2">
-      <label
-        htmlFor={label?.htmlFor}
-        className="w-full text-sm font-medium text-slate-500"
-      >
-        {label?.value}
-      </label>
-      <input
-        id={input?.id}
-        className="rounded border border-gray-200 p-4 pl-3 text-gray-600 outline-blue-500 md:text-sm"
-        data-testid={input?.dataTestId}
-        placeholder={input?.placeholder}
-        type={input?.type}
-        pattern={input?.pattern}
-      />
+      <div>
+        <label
+          htmlFor={label?.htmlFor}
+          className="w-full select-none text-sm font-medium text-slate-500"
+        >
+          {label?.value}
+        </label>
+      </div>
+      <div className="relative">
+        <input
+          id={input?.id}
+          className="w-full rounded border border-gray-200 p-4 pl-3 text-gray-600 outline-blue-500 md:text-sm"
+          data-testid={input?.dataTestId}
+          placeholder={input?.placeholder}
+          type={input?.type}
+          pattern={input?.pattern}
+        />
+        {icon}
+      </div>
     </div>
   );
 };

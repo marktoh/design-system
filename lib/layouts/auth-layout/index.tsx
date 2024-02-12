@@ -5,11 +5,11 @@ interface AuthLayoutProps {
 }
 const AuthLayout: FC<AuthLayoutProps> = ({ left, right }) => {
   return (
-    <div className="flex h-screen flex-col md:grid md:grid-cols-[3fr_2fr]">
-      <section className="hidden md:block md:h-screen">{left}</section>
+    <div className="flex h-screen flex-col md:grid md:grid-cols-[2fr_1fr_]">
       <section className="my-auto flex h-full w-full items-center px-4">
-        {right}
+        {left}
       </section>
+      <section className="hidden md:block md:h-screen">{right}</section>
     </div>
   );
 };

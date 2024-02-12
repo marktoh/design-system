@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
-import AuthLayout from "@/lib/layouts/auth-layout/AuthLayout";
+import AuthLayout from "@/lib/layouts/auth-layout";
 import store from "@/store";
 interface LayoutProps {
   children: ReactNode;
 }
 function Layout({ children }: LayoutProps) {
-  return <AuthLayout left={store?.auth?.cover} right={children} />;
+  return <AuthLayout left={children} right={store?.auth?.cover} />;
 }
 
 export default Layout;

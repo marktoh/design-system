@@ -8,13 +8,13 @@ interface AuxProps {
 }
 const Title: FC<AuxProps> = ({ children }) => {
   return (
-    <h1 className="mb-2 text-center text-4xl font-black text-slate-700">
+    <h1 className="text-center text-4xl font-black text-slate-700">
       {children}
     </h1>
   );
 };
 const ActionText: FC<AuxProps> = ({ children }) => {
-  return <p className="text-center text-sm text-gray-400">{children}</p>;
+  return <p className="text-center text-base text-gray-400">{children}</p>;
 };
 const FormGroupBody: FC<AuxProps> = ({ children }) => {
   return <div className="flex flex-col gap-6">{children}</div>;
@@ -26,7 +26,7 @@ interface authLinksProps {
 const NavLinks: FC<authLinksProps> = ({ authLinks }) => {
   return (
     authLinks?.length > 0 && (
-      <div className="mt-2 flex gap-2">
+      <div className="mt-2 flex select-none gap-2 text-center">
         {authLinks?.map((e) => (
           <AuthLink key={e.href} href={e.href} title={e.title} />
         ))}

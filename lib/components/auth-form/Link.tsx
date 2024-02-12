@@ -25,7 +25,10 @@ interface AuthLinkProps {
 }
 const AuthLink: FC<AuthLinkProps> = ({ title, href }) => {
   return (
-    <NextLink className="text-sm text-gray-400 hover:text-gray-500" href={href}>
+    <NextLink
+      className="text-md font-normal text-gray-400 hover:text-blue-500"
+      href={href}
+    >
       {title}
     </NextLink>
   );
