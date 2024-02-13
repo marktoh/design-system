@@ -1,6 +1,6 @@
 import { FC, MouseEvent } from "react";
-import { Eye } from "../icons/eye";
-import { EyeSlash } from "../icons/eye-slash";
+import { Eye } from "./icons/eye";
+import { EyeSlash } from "./icons/eye-slash";
 
 interface PasswordVisibilityToggleProps {
   isHidden: boolean;
