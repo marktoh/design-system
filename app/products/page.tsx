@@ -1,6 +1,6 @@
 import { FC } from "react";
 import store from "@/store";
-import InteractiveShoppingGallery from "@/lib/components/shopping-gallery/interactive-shopping-gallery";
+import { InteractiveShoppingGallery } from "@/lib/components/shopping-gallery/interactive-shopping-gallery";
 
 const Page: FC = () => {
   return (

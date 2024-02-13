@@ -34,4 +34,4 @@ const SearchBar: FC<SearchBarProps> = ({ products, setProducts }) => {
   );
 };
 
-export default SearchBar;
+export { SearchBar };

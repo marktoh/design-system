@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import ShoppingGallery from ".";
+import { ShoppingGallery } from ".";
 import store from "../../../../store";
 
 const meta = {

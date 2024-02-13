@@ -1,3 +1,3 @@
-import InteractiveShoppingGallery from "./interactive-shopping-gallery";
+import { InteractiveShoppingGallery } from "./interactive-shopping-gallery";
 
 export { InteractiveShoppingGallery };

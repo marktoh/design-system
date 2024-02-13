@@ -1,8 +1,8 @@
 "use client";
 import { FC, useState } from "react";
 import { Product } from "@/store/products-generator";
-import ShoppingGallery from "../shopping-gallery";
-import SearchBar from "../search-bar";
+import { ShoppingGallery } from "../shopping-gallery";
+import { SearchBar } from "../search-bar";
 
 const SearchResultsCount: FC<{ count: number }> = ({ count }) => {
   return (
@@ -28,4 +28,4 @@ const InteractiveShoppingGallery: FC<ShoppingShoppingGalleryProps> = ({
   );
 };
 
-export default InteractiveShoppingGallery;
+export { InteractiveShoppingGallery };

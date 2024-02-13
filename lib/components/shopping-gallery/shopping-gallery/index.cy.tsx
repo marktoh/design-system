@@ -1,4 +1,4 @@
-import ShoppingGallery from ".";
+import { ShoppingGallery } from ".";
 import store from "@/store";
 
 const sampleProducts = store?.products;

@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Product } from "@/store/products-generator";
 
-const ShoppingGalleyCard: FC<Product> = ({
+const ShoppingGalleryCard: FC<Product> = ({
   id,
   name,
   description,
@@ -70,4 +70,4 @@ const ShoppingGalleyCard: FC<Product> = ({
   );
 };
 
-export default ShoppingGalleyCard;
+export { ShoppingGalleryCard };

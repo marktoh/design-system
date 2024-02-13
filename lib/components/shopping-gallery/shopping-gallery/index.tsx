@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { Product } from "@/store/products-generator";
-import ShoppingGalleyCard from "../shopping-gallery-card";
+import { ShoppingGalleryCard } from "../shopping-gallery-card";
 
 interface ShoppingGalleryProps {
   products: Array<Product>;
@@ -12,10 +12,10 @@ const ShoppingGallery: FC<ShoppingGalleryProps> = ({ products }) => {
       data-testid="shopping-gallery"
     >
       {products?.map((product, idx) => (
-        <ShoppingGalleyCard key={idx} {...product} />
+        <ShoppingGalleryCard key={idx} {...product} />
       ))}
     </div>
   );
 };
 
-export default ShoppingGallery;
+export { ShoppingGallery };

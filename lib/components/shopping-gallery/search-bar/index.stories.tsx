@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import SearchBar from ".";
+import { SearchBar } from ".";
 import store from "../../../../store";
 
 const meta = {
