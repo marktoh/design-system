@@ -1,28 +1,26 @@
 "use client";
 import { FormEvent, FC } from "react";
 import AuthForm from "..";
-import EmailFormGroup from "../FormGroup-Email";
-import PasswordFormGroup from "../FormGroup-Password";
-import ConfirmPasswordFormGroup from "../FormGroup-ConfirmPassword";
-import { LoginRoute, ForgotPasswordRoute } from "../Link";
+import EmailFormGroup from "../helper/form-group/email";
+import PasswordFormGroup from "../helper/form-group/password";
+import { SignUpRoute, ForgotPasswordRoute } from "../helper/link";
 
 const props = {
-  title: "Take Off",
-  actionText: "Sign Up for Free",
+  title: "Welcome Back",
+  actionText: "Log in to your account",
   formGroups: (
     <>
       <EmailFormGroup />
       <PasswordFormGroup />
-      <ConfirmPasswordFormGroup />
     </>
   ),
   buttonTitle: "Continue",
-  authLinks: [LoginRoute, ForgotPasswordRoute],
+  authLinks: [SignUpRoute, ForgotPasswordRoute],
   onSubmit: function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
   },
 };
-const SignUpForm: FC = () => {
+const LoginForm: FC = () => {
   const { title, actionText, formGroups, buttonTitle, authLinks, onSubmit } =
     props;
   return (
@@ -37,4 +35,4 @@ const SignUpForm: FC = () => {
   );
 };
 
-export default SignUpForm;
+export default LoginForm;

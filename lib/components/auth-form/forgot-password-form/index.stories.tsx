@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import ForgotPasswordForm from "./ForgotPasswordForm";
+import ForgotPasswordForm from ".";
 import AuthLayout from "../../../layouts/auth-layout";
 import store from "../../../../store";
 

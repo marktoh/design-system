@@ -1,8 +1,9 @@
+"use client";
 import { FC, useState, MouseEvent } from "react";
-import FormGroup from "./FormGroup";
-import { TogglePasswordVisibilityIcon } from "./helper/password-form";
+import FormGroup from ".";
+import { TogglePasswordVisibilityIcon } from "../password-visibility-toggle";
 
-const ConfirmPasswordFormGroup: FC = () => {
+const PasswordFormGroup: FC = () => {
   const [isHidden, setIsHidden] = useState(true);
   const handleClick = (e: MouseEvent<HTMLElement>) => {
     e.stopPropagation();
@@ -12,14 +13,14 @@ const ConfirmPasswordFormGroup: FC = () => {
   return (
     <FormGroup
       label={{
-        htmlFor: "confirm-password",
-        value: "Confirm Password",
+        htmlFor: "password",
+        value: "Password",
       }}
       input={{
-        id: "confirm-password",
+        id: "password",
         type: isHidden ? "password" : "text",
         placeholder: "•••••••••",
-        dataTestId: "confirm-password",
+        dataTestId: "password",
       }}
       icon={
         <TogglePasswordVisibilityIcon
@@ -31,4 +32,4 @@ const ConfirmPasswordFormGroup: FC = () => {
   );
 };
 
-export default ConfirmPasswordFormGroup;
+export default PasswordFormGroup;

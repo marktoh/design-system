@@ -1,8 +1,8 @@
 "use client";
 import { FormEvent, FC } from "react";
 import AuthForm from "..";
-import EmailFormGroup from "../FormGroup-Email";
-import { LoginRoute, SignUpRoute } from "../Link";
+import EmailFormGroup from "../helper/form-group/email";
+import { LoginRoute, SignUpRoute } from "../helper/link";
 
 const props = {
   title: "Retrieve Account",

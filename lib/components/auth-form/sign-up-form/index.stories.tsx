@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import SignUpForm from "./SignUpForm";
+import SignUpForm from ".";
 import AuthLayout from "../../../layouts/auth-layout";
 import store from "../../../../store";
 

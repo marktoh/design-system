@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { within, userEvent } from "@storybook/testing-library";
 
-import LoginForm from "./LoginForm";
+import LoginForm from ".";
 import AuthLayout from "../../../layouts/auth-layout";
 import store from "../../../../store";
 
