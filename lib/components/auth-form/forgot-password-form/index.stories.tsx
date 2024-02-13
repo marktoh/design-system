@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import ForgotPasswordForm from ".";
-import AuthLayout from "../../../layouts/auth-layout";
+import AuthLayout from "../layout";
 import store from "../../../../store";
 
 const meta = {
@@ -23,6 +23,6 @@ export const Integration: Story = {
     layout: "fullscreen",
   },
   decorators: (Story) => (
-    <AuthLayout left={<Story />} right={store?.auth?.cover} />
+    <AuthLayout left={<Story />} right={store?.auth?.coverPhoto} />
   ),
 };

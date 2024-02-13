@@ -1,6 +1,6 @@
 "use client";
 import { FormEvent, FC } from "react";
-import AuthForm from "..";
+import AuthForm from "../base-form";
 import EmailFormGroup from "../helper/form-group/email";
 import PasswordFormGroup from "../helper/form-group/password";
 import { SignUpRoute, ForgotPasswordRoute } from "../helper/link";

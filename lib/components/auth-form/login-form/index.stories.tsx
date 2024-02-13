@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { within, userEvent } from "@storybook/testing-library";
 
 import LoginForm from ".";
-import AuthLayout from "../../../layouts/auth-layout";
+import AuthLayout from "../layout";
 import store from "../../../../store";
 
 const meta = {
@@ -36,14 +36,14 @@ export const DefaultTest: Story = {
 export const Integration: Story = {
   args: {},
   decorators: (Story) => (
-    <AuthLayout left={<Story />} right={store?.auth?.cover} />
+    <AuthLayout left={<Story />} right={store?.auth?.coverPhoto} />
   ),
 };
 
 export const IntegrationTest: Story = {
   args: {},
   decorators: (Story) => (
-    <AuthLayout left={<Story />} right={store?.auth?.cover} />
+    <AuthLayout left={<Story />} right={store?.auth?.coverPhoto} />
   ),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);

@@ -6,7 +6,9 @@ import products from "./products.json";
 export default {
   navList,
   auth: {
-    cover: <Image className="h-full object-cover" src={Background} alt="" />,
+    coverPhoto: (
+      <Image className="h-full object-cover" src={Background} alt="" />
+    ),
   },
   products,
 };
