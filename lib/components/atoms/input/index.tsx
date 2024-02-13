@@ -14,4 +14,4 @@ const Input: FC<InputProps> = ({ type, placeholder, dataTestId }) => {
   );
 };
 
-export default Input;
+export { Input };

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import store from "../../../store";
+import store from "../../../../store";
 
-import NavList from "./NavList";
+import { NavList } from ".";
 
 const meta = {
   title: "Molecules/NavList",

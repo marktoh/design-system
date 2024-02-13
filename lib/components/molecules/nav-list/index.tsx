@@ -25,4 +25,4 @@ const NavList: FC<LinksProps> = ({ links }) => {
   );
 };
 
-export default NavList;
+export { NavList };
