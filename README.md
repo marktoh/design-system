@@ -1,6 +1,6 @@
 # Design System
 
-A design system for Mumbo
+A design system for Mumbo built with TailwindCSS, Next.js, and Vercel
 
 ## Table of Contents
 
