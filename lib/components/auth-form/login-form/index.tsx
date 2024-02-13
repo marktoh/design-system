@@ -1,6 +1,6 @@
 "use client";
 import { FormEvent, FC } from "react";
-import { AuthForm } from "../helper/base-form";
+import { AuthForm } from "../templates/base-form";
 import {
   EmailFormGroup,
   PasswordFormGroup,
