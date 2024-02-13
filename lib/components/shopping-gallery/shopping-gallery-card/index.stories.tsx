@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import ShoppingGalleryCard from "./ShoppingGalleryCard";
-import store from "../../../store";
+import ShoppingGalleryCard from ".";
+import store from "../../../../store";
 
 const meta = {
   title: "ShoppingGallery/ShoppingGalleryCard",

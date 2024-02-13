@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import SearchBar from "./SearchBar";
-import store from "../../../store";
+import SearchBar from ".";
+import store from "../../../../store";
 
 const meta = {
   title: "ShoppingGallery/SearchBar",

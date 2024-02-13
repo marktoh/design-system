@@ -1,5 +1,5 @@
 import { FC } from "react";
-import NavList from "@/lib/components/molecules/nav-list";
+import { NavList } from "@/lib/components/molecules/nav-list";
 import store from "@/store";
 
 const Page: FC = () => {

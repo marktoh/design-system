@@ -1,4 +1,4 @@
-import ShoppingGalleryCard from "./ShoppingGalleryCard";
+import ShoppingGalleryCard from ".";
 import store from "@/store";
 
 const veryifyText = (dataTestId: string, text: string) =>
