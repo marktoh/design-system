@@ -14,8 +14,7 @@ const preview: Preview = {
     options: {
       storySort: {
         order: [
-          "Atoms",
-          "Molecules",
+          "Common",
           "Auth",
           ["LoginForm", "SignUpForm", "ForgotPassword"],
         ],

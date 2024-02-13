@@ -4,7 +4,7 @@ import store from "../../../../store";
 import { NavList } from ".";
 
 const meta = {
-  title: "Molecules/NavList",
+  title: "Common/NavList",
   component: NavList,
   tags: ["autodocs"],
 } satisfies Meta<typeof NavList>;
