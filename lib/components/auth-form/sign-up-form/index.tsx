@@ -1,10 +1,13 @@
 "use client";
 import { FormEvent, FC } from "react";
 import AuthForm from "../base-form";
-import EmailFormGroup from "../helper/form-group/email";
-import PasswordFormGroup from "../helper/form-group/password";
-import ConfirmPasswordFormGroup from "../helper/form-group/confirm-password";
-import { LoginRoute, ForgotPasswordRoute } from "../helper/link";
+import {
+  EmailFormGroup,
+  PasswordFormGroup,
+  ConfirmPasswordFormGroup,
+  LoginRoute,
+  ForgotPasswordRoute,
+} from "../helper";
 
 const props = {
   title: "Take Off",

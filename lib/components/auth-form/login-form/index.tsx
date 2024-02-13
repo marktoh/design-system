@@ -1,9 +1,12 @@
 "use client";
 import { FormEvent, FC } from "react";
 import AuthForm from "../base-form";
-import EmailFormGroup from "../helper/form-group/email";
-import PasswordFormGroup from "../helper/form-group/password";
-import { SignUpRoute, ForgotPasswordRoute } from "../helper/link";
+import {
+  EmailFormGroup,
+  PasswordFormGroup,
+  SignUpRoute,
+  ForgotPasswordRoute,
+} from "../helper";
 
 const props = {
   title: "Welcome Back",
