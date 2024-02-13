@@ -1,7 +1,7 @@
 import { FC } from "react";
-import { FormGroup } from ".";
-import { PasswordVisibilityToggle } from "../password-visibility-toggle";
-import { usePasswordVisiblity, getInputType } from "./helper/password";
+import { FormGroup } from "../helper/base";
+import { PasswordVisibilityToggle } from "../../password-visibility-toggle";
+import { usePasswordVisiblity, getInputType } from "../helper/password";
 
 const ConfirmPasswordFormGroup: FC = () => {
   const [isHidden, toggle] = usePasswordVisiblity();

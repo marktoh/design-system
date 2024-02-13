@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { FormGroup } from ".";
+import { FormGroup } from "../helper/base";
 
 const EmailFormGroup: FC = () => {
   return (

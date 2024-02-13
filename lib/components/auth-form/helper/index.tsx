@@ -1,7 +1,9 @@
 import { Button } from "./button";
-import { EmailFormGroup } from "./form-group/email";
-import { PasswordFormGroup } from "./form-group/password";
-import { ConfirmPasswordFormGroup } from "./form-group/confirm-password";
+import {
+  EmailFormGroup,
+  PasswordFormGroup,
+  ConfirmPasswordFormGroup,
+} from "./form-group";
 import { PasswordVisibilityToggle } from "./password-visibility-toggle";
 import { LoginRoute, SignUpRoute, ForgotPasswordRoute } from "./link";
 
