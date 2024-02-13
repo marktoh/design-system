@@ -2,13 +2,14 @@ import { FC, MouseEvent } from "react";
 import { Eye } from "../icons/eye";
 import { EyeSlash } from "../icons/eye-slash";
 
-interface TogglePasswordVisibilityToggleProps {
+interface PasswordVisibilityToggleProps {
   isHidden: boolean;
   handleClick: (e: MouseEvent<HTMLElement>) => void;
 }
-const TogglePasswordVisibilityToggle: FC<
-  TogglePasswordVisibilityToggleProps
-> = ({ isHidden, handleClick }) => {
+const PasswordVisibilityToggle: FC<PasswordVisibilityToggleProps> = ({
+  isHidden,
+  handleClick,
+}) => {
   return (
     <div
       className={`absolute right-4 inline-flex h-full cursor-pointer items-center text-slate-300`}
@@ -19,4 +20,4 @@ const TogglePasswordVisibilityToggle: FC<
   );
 };
 
-export { TogglePasswordVisibilityToggle };
+export { PasswordVisibilityToggle };

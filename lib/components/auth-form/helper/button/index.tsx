@@ -11,4 +11,4 @@ const Button: FC<ButtonProps> = ({ title }) => {
   );
 };
 
-export default Button;
+export { Button };

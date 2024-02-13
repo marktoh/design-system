@@ -1,5 +1,5 @@
 import { FC } from "react";
-import FormGroup from ".";
+import { FormGroup } from ".";
 
 const EmailFormGroup: FC = () => {
   return (
@@ -18,4 +18,4 @@ const EmailFormGroup: FC = () => {
   );
 };
 
-export default EmailFormGroup;
+export { EmailFormGroup };

@@ -37,4 +37,4 @@ const FormGroup: FC<FormGroupProps> = ({ label, input, icon }) => {
   );
 };
 
-export default FormGroup;
+export { FormGroup };

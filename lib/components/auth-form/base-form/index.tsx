@@ -1,7 +1,7 @@
 "use client";
 import { FormEvent, FC, ReactNode } from "react";
-import Button from "../helper/button";
-import AuthLink from "../helper/link";
+import { Button } from "../helper/button";
+import { AuthLink } from "../helper/link";
 
 interface AuxProps {
   children: ReactNode;
@@ -67,4 +67,4 @@ const AuthForm: FC<AuthFormProps> = ({
   );
 };
 
-export default AuthForm;
+export { AuthForm };

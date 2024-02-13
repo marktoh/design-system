@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
-import ForgotPasswordForm from ".";
-import AuthLayout from "../layout";
+import { ForgotPasswordForm } from ".";
+import { AuthLayout } from "../layout";
 import store from "../../../../store";
 
 const meta = {

@@ -1,6 +1,6 @@
 "use client";
 import { FormEvent, FC } from "react";
-import AuthForm from "../base-form";
+import { AuthForm } from "../base-form";
 import {
   EmailFormGroup,
   PasswordFormGroup,
@@ -40,4 +40,4 @@ const SignUpForm: FC = () => {
   );
 };
 
-export default SignUpForm;
+export { SignUpForm };

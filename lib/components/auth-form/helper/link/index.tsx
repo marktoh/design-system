@@ -34,5 +34,4 @@ const AuthLink: FC<AuthLinkProps> = ({ title, href }) => {
   );
 };
 
-export { type Route, LoginRoute, SignUpRoute, ForgotPasswordRoute };
-export default AuthLink;
+export { type Route, LoginRoute, SignUpRoute, ForgotPasswordRoute, AuthLink };

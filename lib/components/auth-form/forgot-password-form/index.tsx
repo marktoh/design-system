@@ -1,6 +1,6 @@
 "use client";
 import { FormEvent, FC } from "react";
-import AuthForm from "../base-form";
+import { AuthForm } from "../base-form";
 import { EmailFormGroup, LoginRoute, SignUpRoute } from "../helper";
 
 const props = {
@@ -28,4 +28,4 @@ const ForgotPasswordForm: FC = () => {
   );
 };
 
-export default ForgotPasswordForm;
+export { ForgotPasswordForm };

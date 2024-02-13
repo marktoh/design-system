@@ -14,4 +14,4 @@ const AuthLayout: FC<AuthLayoutProps> = ({ left, right }) => {
   );
 };
 
-export default AuthLayout;
+export { AuthLayout };

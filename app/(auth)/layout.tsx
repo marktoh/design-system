@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import AuthLayout from "@/lib/components/auth-form/layout";
+import { AuthLayout } from "@/lib/components/auth-form/";
 import store from "@/store";
 interface LayoutProps {
   children: ReactNode;

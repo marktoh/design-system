@@ -1,7 +1,6 @@
-"use client";
 import { FC, useState, MouseEvent } from "react";
-import FormGroup from ".";
-import { TogglePasswordVisibilityIcon } from "../password-visibility-toggle";
+import { FormGroup } from ".";
+import { PasswordVisibilityToggle } from "../password-visibility-toggle";
 
 const PasswordFormGroup: FC = () => {
   const [isHidden, setIsHidden] = useState(true);
@@ -23,7 +22,7 @@ const PasswordFormGroup: FC = () => {
         dataTestId: "password",
       }}
       icon={
-        <TogglePasswordVisibilityIcon
+        <PasswordVisibilityToggle
           isHidden={isHidden}
           handleClick={handleClick}
         />
@@ -32,4 +31,4 @@ const PasswordFormGroup: FC = () => {
   );
 };
 
-export default PasswordFormGroup;
+export { PasswordFormGroup };
