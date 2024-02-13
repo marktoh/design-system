@@ -1,6 +1,6 @@
 "use client";
 import { FormEvent, FC } from "react";
-import { AuthForm } from "../base-form";
+import { AuthForm } from "../helper/base-form";
 import { EmailFormGroup, LoginRoute, SignUpRoute } from "../helper";
 
 const props = {
