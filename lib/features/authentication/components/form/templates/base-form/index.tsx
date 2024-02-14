@@ -1,5 +1,5 @@
 "use client";
-import { FormEvent, FC, ReactNode } from "react";
+import { FormEvent, FC, ReactNode, useState } from "react";
 import { Button } from "../../../ui/button";
 import { AuthLink } from "../../../ui/link";
 
@@ -40,7 +40,7 @@ interface AuthFormProps {
   formGroups: ReactNode;
   buttonTitle: string;
   authLinks: Array<{ href: string; title: string }>;
-  onSubmit: (e: FormEvent<HTMLFormElement>) => void;
+  apiCall: () => Promise<void>;
 }
 /**
  * A base component for building authentication forms.
@@ -51,8 +51,21 @@ const BaseAuthForm: FC<AuthFormProps> = ({
   formGroups,
   buttonTitle,
   authLinks,
-  onSubmit,
+  apiCall,
 }) => {
+  const [isLoading, setLoading] = useState(false);
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    try {
+      setLoading(true);
+      await apiCall();
+    } catch (e) {
+      throw new Error("Authentication Error");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <form
       className="mx-auto flex min-h-96 w-96 flex-col gap-2 rounded"
@@ -61,7 +74,7 @@ const BaseAuthForm: FC<AuthFormProps> = ({
       <Title>{title}</Title>
       <ActionText>{actionText}</ActionText>
       <FormGroupBody>{formGroups}</FormGroupBody>
-      <Button title={buttonTitle} />
+      <Button title={buttonTitle} isLoading={isLoading} />
       <NavLinks authLinks={authLinks} />
     </form>
   );

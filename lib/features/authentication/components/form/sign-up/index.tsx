@@ -8,6 +8,7 @@ import {
   LoginRoute,
   ForgotPasswordRoute,
 } from "../../ui";
+import { mockApi } from "../templates/base-form/mock-api";
 
 const props = {
   title: "Take Off",
@@ -21,13 +22,9 @@ const props = {
   ),
   buttonTitle: "Continue",
   authLinks: [LoginRoute, ForgotPasswordRoute],
-  onSubmit: function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-  },
 };
 const SignUpForm: FC = () => {
-  const { title, actionText, formGroups, buttonTitle, authLinks, onSubmit } =
-    props;
+  const { title, actionText, formGroups, buttonTitle, authLinks } = props;
   return (
     <BaseAuthForm
       title={title}
@@ -35,7 +32,7 @@ const SignUpForm: FC = () => {
       formGroups={formGroups}
       buttonTitle={buttonTitle}
       authLinks={authLinks}
-      onSubmit={onSubmit}
+      apiCall={mockApi}
     />
   );
 };

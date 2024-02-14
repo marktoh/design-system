@@ -2,6 +2,7 @@
 import { FormEvent, FC } from "react";
 import { BaseAuthForm } from "../templates/base-form";
 import { EmailFormGroup, LoginRoute, SignUpRoute } from "../../ui";
+import { mockApi } from "../templates/base-form/mock-api";
 
 const props = {
   title: "Retrieve Account",
@@ -9,13 +10,9 @@ const props = {
   formGroups: <EmailFormGroup />,
   buttonTitle: "Get Reset Password Link",
   authLinks: [LoginRoute, SignUpRoute],
-  onSubmit: function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-  },
 };
 const ForgotPasswordForm: FC = () => {
-  const { title, actionText, formGroups, buttonTitle, authLinks, onSubmit } =
-    props;
+  const { title, actionText, formGroups, buttonTitle, authLinks } = props;
   return (
     <BaseAuthForm
       title={title}
@@ -23,7 +20,7 @@ const ForgotPasswordForm: FC = () => {
       formGroups={formGroups}
       buttonTitle={buttonTitle}
       authLinks={authLinks}
-      onSubmit={onSubmit}
+      apiCall={mockApi}
     />
   );
 };
