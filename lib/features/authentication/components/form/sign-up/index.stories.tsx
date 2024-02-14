@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { SignUpForm } from ".";
-import { AuthLayout } from "../templates/layout";
-import store from "../../../../store";
+import { AuthLayout } from "../../../pages/layout";
+import { demo } from "../../../data";
 
 const meta = {
   title: "Auth/SignUpForm",
@@ -23,6 +23,6 @@ export const Integration: Story = {
     layout: "fullscreen",
   },
   decorators: (Story) => (
-    <AuthLayout left={<Story />} right={store?.auth?.pageBackground} />
+    <AuthLayout left={<Story />} right={demo.pageBackground} />
   ),
 };

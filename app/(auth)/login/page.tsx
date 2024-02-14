@@ -1,7 +1,8 @@
-import { LoginForm } from "@/lib/components/auth-form/login-form";
+import { LoginPage } from "@/lib/features/authentication";
+import store from "@/store";
 
 function Page() {
-  return <LoginForm />;
+  return <LoginPage background={store.auth.pageBackground} />;
 }
 
 export default Page;

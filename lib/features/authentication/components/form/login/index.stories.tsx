@@ -2,8 +2,8 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { within, userEvent } from "@storybook/testing-library";
 
 import { LoginForm } from ".";
-import { AuthLayout } from "../templates/layout";
-import store from "../../../../store";
+import { AuthLayout } from "../../../pages/layout";
+import { demo } from "../../../data";
 
 const meta = {
   title: "Auth/LoginForm",
@@ -36,14 +36,14 @@ export const DefaultTest: Story = {
 export const Integration: Story = {
   args: {},
   decorators: (Story) => (
-    <AuthLayout left={<Story />} right={store?.auth?.pageBackground} />
+    <AuthLayout left={<Story />} right={demo.pageBackground} />
   ),
 };
 
 export const IntegrationTest: Story = {
   args: {},
   decorators: (Story) => (
-    <AuthLayout left={<Story />} right={store?.auth?.pageBackground} />
+    <AuthLayout left={<Story />} right={demo.pageBackground} />
   ),
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
