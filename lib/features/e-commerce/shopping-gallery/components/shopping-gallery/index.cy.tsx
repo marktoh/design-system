@@ -1,7 +1,7 @@
 import { ShoppingGallery } from ".";
-import store from "@/store";
+import { demo } from "../../data";
 
-const sampleProducts = store?.products;
+const sampleProducts = demo?.products;
 describe("<ShoppingGallery>", () => {
   beforeEach(() => {
     cy.mount(<ShoppingGallery products={sampleProducts} />);

@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { InteractiveShoppingGallery } from ".";
-import store from "../../../../store";
+import { demo } from "../../data";
 
 const meta = {
   title: "ShoppingGallery/InteractiveShoppingGallery",
@@ -13,5 +13,5 @@ export default meta;
 type Story = StoryObj<typeof InteractiveShoppingGallery>;
 
 export const Default: Story = {
-  args: { products: store?.products },
+  args: { products: demo?.products },
 };

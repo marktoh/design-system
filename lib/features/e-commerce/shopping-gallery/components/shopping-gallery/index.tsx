@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { Product } from "@/store/products-generator";
+import { Product } from "../../data/products/helper";
 import { ShoppingGalleryCard } from "../shopping-gallery-card";
 
 interface ShoppingGalleryProps {

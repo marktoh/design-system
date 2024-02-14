@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import { ShoppingGalleryCard } from ".";
-import store from "../../../../store";
+import { demo } from "../../data";
 
 const meta = {
   title: "ShoppingGallery/ShoppingGalleryCard",
@@ -12,7 +12,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof ShoppingGalleryCard>;
 
-const sampleProduct = store?.products?.[0];
+const sampleProduct = demo?.products?.[0];
 export const Default: Story = {
   args: { ...sampleProduct },
 };
