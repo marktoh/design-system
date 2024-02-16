@@ -12,7 +12,7 @@ const PasswordVisibilityToggle: FC<PasswordVisibilityToggleProps> = ({
 }) => {
   return (
     <div
-      className={`absolute right-4 inline-flex h-full cursor-pointer items-center text-slate-300`}
+      className={`absolute right-4 inline-flex h-full cursor-pointer items-center text-slate-700`}
       onClick={handleClick}
     >
       {isHidden ? <EyeSlash /> : <Eye />}
