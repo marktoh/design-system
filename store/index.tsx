@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Background from "../public/backgrounds/flower.jpg";
-import navList from "./nav-list.json";
+import navList from "./nav-list";
 import products from "./products.json";
 
 export default {
