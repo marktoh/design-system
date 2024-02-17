@@ -27,8 +27,13 @@ const NavLinks: FC<authLinksProps> = ({ authLinks }) => {
   return (
     authLinks?.length > 0 && (
       <div className="mt-2 flex select-none gap-2 text-center">
-        {authLinks?.map((e) => (
-          <AuthLink key={e.href} href={e.href} title={e.title} />
+        {authLinks?.map((e, idx) => (
+          <AuthLink
+            key={e.href}
+            href={e.href}
+            title={e.title}
+            type={idx === 0 ? "secondary" : "tertiary"}
+          />
         ))}
       </div>
     )

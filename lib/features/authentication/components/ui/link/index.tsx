@@ -22,13 +22,17 @@ const ForgotPasswordRoute: Route = {
 interface AuthLinkProps {
   href: string;
   title: string;
+  type: "secondary" | "tertiary";
 }
-const AuthLink: FC<AuthLinkProps> = ({ title, href }) => {
+const AuthLink: FC<AuthLinkProps> = ({ title, href, type }) => {
+  let className = "text-sm font-semibold rounded-lg px-4 py-3";
+  if (type === "secondary") {
+    className += " bg-neutral-100 text-gray-600";
+  } else {
+    className += " bg-white border border-neutral-100 text-gray-600";
+  }
   return (
-    <NextLink
-      className="text-md font-normal text-gray-400 hover:text-blue-500"
-      href={href}
-    >
+    <NextLink className={className} href={href}>
       {title}
     </NextLink>
   );
