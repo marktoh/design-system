@@ -29,7 +29,7 @@ const AuthLink: FC<AuthLinkProps> = ({ title, href, type }) => {
   if (type === "secondary") {
     className += " bg-neutral-100 text-gray-600";
   } else {
-    className += " bg-white border border-neutral-100 text-gray-600";
+    className += " bg-white text-gray-600";
   }
   return (
     <NextLink className={className} href={href}>
