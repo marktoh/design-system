@@ -7,7 +7,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 const Button: FC<ButtonProps> = ({ title, isLoading }) => {
   return (
     <button
-      className="mt-3 select-none rounded-lg bg-blue-400 p-4 font-semibold text-white hover:bg-blue-500 disabled:bg-blue-500"
+      className="mt-3 select-none rounded-lg bg-blue-500 p-4 font-semibold text-white transition duration-500 hover:bg-blue-600 disabled:bg-blue-600"
       disabled={isLoading}
     >
       {isLoading ? <Loader /> : title}

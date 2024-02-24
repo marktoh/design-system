@@ -25,7 +25,7 @@ const FormGroup: FC<FormGroupProps> = ({ label, input, icon }) => {
       <div className="relative">
         <input
           id={input?.id}
-          className="w-full rounded-lg border border-gray-200 bg-gray-200 p-4 pl-3 text-gray-900 outline-blue-500"
+          className="w-full rounded-lg border border-gray-200 bg-gray-200 p-4 pl-3 text-gray-900 outline-blue-500 transition duration-500 focus:bg-gray-100"
           data-testid={input?.dataTestId}
           placeholder={input?.placeholder}
           type={input?.type}
