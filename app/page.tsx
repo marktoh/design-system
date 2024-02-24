@@ -4,10 +4,10 @@ import store from "@/store";
 
 const Page: FC = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex flex-col gap-4">
+    <main className="grid min-h-screen grid-cols-[300px_1fr] p-4">
+      <div className="flex flex-col gap-4 p-4">
         <h1
-          className="text-center text-3xl font-semibold text-gray-700"
+          className="pl-4 text-xl font-semibold text-gray-900"
           data-testid="heading"
         >
           HomePage

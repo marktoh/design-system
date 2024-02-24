@@ -15,7 +15,7 @@ const NavList: FC<LinksProps> = ({ links }) => {
       {links?.map((link) => (
         <li key={link.href}>
           <Link
-            className="flex items-center gap-2 rounded p-4 text-base font-semibold text-gray-700 hover:bg-neutral-100"
+            className="flex items-center gap-4 rounded-md p-6 text-lg font-semibold text-gray-900 transition duration-500 ease-in-out hover:bg-gray-100"
             href={link.href}
           >
             <div className="h-4 w-4">{link.icon}</div>
