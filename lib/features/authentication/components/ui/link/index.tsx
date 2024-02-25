@@ -27,7 +27,8 @@ interface AuthLinkProps {
 const AuthLink: FC<AuthLinkProps> = ({ title, href, type }) => {
   let className = "text-sm font-semibold rounded-lg px-4 py-3";
   if (type === "secondary") {
-    className += " bg-neutral-100 text-gray-600";
+    className +=
+      " bg-neutral-100 text-gray-600 hover:bg-neutral-200 transition duration-500";
   } else {
     className += " bg-white text-gray-600";
   }
