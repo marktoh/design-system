@@ -12,7 +12,15 @@ const ShoppingGallery: FC<ShoppingGalleryProps> = ({ products }) => {
       data-testid="shopping-gallery"
     >
       {products?.map((product, idx) => (
-        <ShoppingGalleryCard key={idx} {...product} />
+        <div
+          key={idx}
+          className="animate-fade-in"
+          style={{
+            animationDuration: idx > 10 ? "1.0s" : `${0.2 + idx * 0.1}s`,
+          }}
+        >
+          <ShoppingGalleryCard {...product} />
+        </div>
       ))}
     </div>
   );
